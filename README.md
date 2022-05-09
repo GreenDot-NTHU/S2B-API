@@ -19,20 +19,11 @@ make all # builds, brings containers up, runs tests
 ## Creating a local virtualenv (optional)
 
 ```sh
-python3.8 -m venv .venv && source .venv/bin/activate # or however you like to create virtualenvs
+python3 -m venv venv
+source env/bin/activate
 
-# for chapter 1
-pip install pytest 
+pip install -r requirements.txt
 
-# for chapter 2
-pip install pytest sqlalchemy
-
-# for chapter 4+5
-pip install requirements.txt
-
-# for chapter 6+
-pip install requirements.txt
-pip install -e src/
 ```
 
 <!-- TODO: use a make pipinstall command -->
